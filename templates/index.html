@@ -6,7 +6,7 @@
 {% for ticket in new_tickets %}
 <ul>
     <h3>Title | Reported By</h3>
-    <a href="/ticket/{{ticket.id}}">{{ticket.title}}</a> | <a
+    <a href="/ticket/{{ticket.id}}/">{{ticket.title}}</a> | <a
         href="/user/{{ticket.name_of_user.id}}/">{{ticket.name_of_user}}</a>
 </ul>
 {% endfor %}
@@ -16,7 +16,7 @@
 {% for ticket in inprogress_tickets %}
 <ul>
     <h3>Title | Reported By</h3>
-    <a href="/ticket/{{ticket.id}}">{{ticket.title}}</a> | <a
+    <a href="/ticket/{{ticket.id}}/">{{ticket.title}}</a> | <a
         href="/user/{{ticket.name_of_user.id}}/">{{ticket.name_of_user}}</a>
 </ul>
 {% endfor %}
@@ -26,7 +26,7 @@
 {% for ticket in done_tickets %}
 <ul>
     <h3>Title | Reported By</h3>
-    <a href="/ticket/{{ticket.id}}">{{ticket.title}}</a> | <a
+    <a href="/ticket/{{ticket.id}}/">{{ticket.title}}</a> | <a
         href="/user/{{ticket.name_of_user.id}}/">{{ticket.name_of_user}}</a>
 </ul>
 {% endfor %}
@@ -34,7 +34,7 @@
 {% for ticket in invalid_tickets %}
 <ul>
     <h3>Title | Reported By</h3>
-    <a href="/ticket/{{ticket.id}}">{{ticket.title}}</a> | <a
+    <a href="/ticket/{{ticket.id}}/">{{ticket.title}}</a> | <a
         href="/user/{{ticket.name_of_user.id}}/">{{ticket.name_of_user}}</a>
 </ul>
 {% endfor %}
