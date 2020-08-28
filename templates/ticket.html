@@ -1,0 +1,24 @@
+<a href="/"><button>Home</button></a>
+<h1>{{ticket.title}}</h1>
+<h3>Ticket made by: <a href="/user/{{ticket.name_of_user.id}}/">{{ticket.name_of_user}}</a></h3>
+<h3>Ticket Description: {{ticket.description}}</h3>
+<h3>Ticket Status: {{ticket.get_status_of_ticket_display}}
+    <h3>Ticket Assigned to:
+        {% if ticket.user_assigned == None %}
+        {{ticket.user_assigned}}</h3>
+    {% else %}
+    <a href="/user/{{ticket.user_assigned.id}}/">{{ticket.user_assigned}}</a>
+    {% endif %}
+    <h3>Ticket Completed by:
+        {% if ticket.completed_by == None %}
+        {{ticket.completed_by}}</h3>
+    {% else %}
+    <a href="/user/{{ticket.name_of_user.id}}/">{{ticket.completed_by}}</a>
+    {% endif %}
+    <h3>Time Submitted: {{ticket.time_date}}</h3>
+    <br>
+    <br>
+    <a href="/ticket/{{ticket.id}}/edit/"><button>Edit ticket</button></a>
+    <a href="/inprogress/{{ticket.id}}/"><button>In Progress</button></a>
+    <a href="/completed/{{ticket.id}}/"><button>Completed</button></a>
+    <a href="/invalid/{{ticket.id}}/"><button>Invalid</button></a>

@@ -1,0 +1,34 @@
+<a href="/"><button>Home</button></a>
+<h1>{{selected_user.username}}</h1>
+<h2>New Tickets</h2>
+{% for ticket in new_tickets %}
+<ul>
+    <h3>Title | Reported By</h3>
+    <a href="/ticket/{{ticket.id}}">{{ticket.title}}</a> | {{ticket.name_of_user}}
+</ul>
+{% endfor %}
+<br>
+<br>
+<h2> In Progress </h2>
+{% for ticket in inprogress_tickets %}
+<ul>
+    <h3>Title | Reported By</h3>
+    <a href="/ticket/{{ticket.id}}">{{ticket.title}}</a> | {{ticket.name_of_user}}
+</ul>
+{% endfor %}
+<br>
+<br>
+<h2>Done</h2>
+{% for ticket in done_tickets %}
+<ul>
+    <h3>Title | Reported By</h3>
+    <a href="/ticket/{{ticket.id}}">{{ticket.title}}</a> | {{ticket.name_of_user}}
+</ul>
+{% endfor %}
+<h2>Invalid</h2>
+{% for ticket in invalid_tickets %}
+<ul>
+    <h3>Title | Reported By</h3>
+    <a href="/ticket/{{ticket.id}}">{{ticket.title}}</a> | {{ticket.name_of_user}}
+</ul>
+{% endfor %}
