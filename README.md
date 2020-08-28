@@ -3,8 +3,9 @@ Got help from Detrich on getting Ticket model setup
 
 Peter helped clarify what as was needed for the assignment and explained to me how to optimize my index.html
 
-Matt explained AbstractUser to me and how to get it work without passing in new fields
-Matt also help me understand how to assign a user to a ticket while marking it as in progress, how to complete a ticket and how to make invalid
+Matt explained AbstractUser to me and how to get it to work without passing in new fields
+
+Matt also helped me understand how to assign a user to a ticket while marking it as in progress, how to complete a ticket and how to make invalid
 while changing the necessary fields .
 
 In order to display ticket status I referenced this code 
