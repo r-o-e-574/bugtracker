@@ -85,6 +85,7 @@ def edit_ticket(request, ticket_id):
 def ticket_inprogress(request, ticket_id):
     ticket = models.Ticket.objects.get(id=ticket_id)
     ticket.status_of_ticket = 'P'
+    ticket.completed_by = None
     if request.method == "POST":
         form = forms.AssignTicket(request.POST)
         if form.is_valid():

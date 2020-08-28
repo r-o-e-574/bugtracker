@@ -17,16 +17,3 @@
 </form>
 
 {% endblock %}
-
-
-{% comment %} <form action="" method="post">
-    {% csrf_token %}
-    {{form.as_p}}
-    {% if request.path == "/login/" %}
-    <input type="submit" value="Login">
-    {% elif request.path == "/addticket/" %}
-    <input type="submit" value="Submit Ticket">
-    {% else %}
-    <input type="submit" value="Submit Edit">
-    {% endif %}
-</form> {% endcomment %}
